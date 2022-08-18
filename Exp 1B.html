@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1B Form</title>
+    <link rel="stylesheet" href="Exp 1B CSS.css">
+</head>
+<body>
+    <form action="/tacos" onsubmit="alert('Form Valid');">
+        <h2>REGISTER</h2>
+        <div id="main">
+            <br>
+            <section id="header_text">
+                <p>PLEASE FILL THIS FORM TO CREATE ACCOUNT</p>
+            </section>
+            <p><label for="username">Enter username</label></p>
+            <input type="text" id="username" placeholder="Username" class="inputs" required>
+            <p><label for="email">E-Mail</label></p>
+            <input type="email"  id="email" placeholder="Email ID" class="inputs" required>
+            <p><label for="pass">Password</label></p>
+            <input type="password"  id="pass" placeholder="Password" class="inputs" required>
+            <p><label for="dob">Date of birth</label></p>
+            <input type="date" name="" id="" class="inputs" required placeholder="DOB">
+            <p><label for="phone">Phone Number</label></p>
+            <input type="tel" placeholder="Phone number" class="inputs" id="phone" required>
+
+            <p><label for="gender">Gender</label></p>
+            <div class="gender">
+                <p><label for="male">Male</label>
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div id="subscription">
+                <label for="sub">Premium Subscription</label>
+                <input type="checkbox" id="sub">
+            </div>
+            <p><button>Submit</button></p> <br>
+        </div>
+    </form>
+    <p>Don't have an account? <a href="https://google.co.in">Sign Up</a>.</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+    background-image: url('https://c.tenor.com/yOn8FbGcvrAAAAAd/hacker-hackerman.gif');
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*{
+    background-color:darkgrey;
+    font-style: Bold;
+    color: aliceblue;
+}*/
+input{
+    background-color: lightgray;
+    border: 0px;
+    padding-top: 10px;
+}
+
+button{
+    background-color: green;
+    border: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px; 
+}
+#form{
+    background-color: darkgray;
+    align-content: center;
+    border: 1px;
+}
+
+#header{
+    background-color: #cbd1cc;
+    text-align: center;
+}
+
+#main{
+    background-color: #000000b0;
+    /* width: 50%; aec07d85*/
+    /* opacity: 50%; */
+    
+    
+}
+.inputs{
+    background-color: gray;
+}
+h2{
+    font-size: 200%;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    animation: blinker 1s linear infinite;
+}
+input::placeholder{
+    color: #15ff00;
+}
+@keyframes blinker {
+    80% {
+      text-shadow: 0 0 0;
+    }
+}
+.gender{
+    color: #15ff00;
+    font-size: 70%;
+}
+#header_text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+button:hover{
+    background-color: black;
+    color: #15ff00;
+    transition: color 1s, background-color 1s;
+}
+a{
+    text-decoration: none;
+    color: #15ff00;
+}
