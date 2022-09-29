@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Exp3.css">
+    <title>Volume of Cylinder</title>
+</head>
+<body>
+    <script>
+        function run(){
+            function volume(r, h) {
+                const pi = 3.142;
+                var vol = pi*r*r*h;
+                document.getElementById("voll").value = vol;
+            }
+            var r = document.getElementById("rad").value;
+            var h = document.getElementById("hei").value;
+            volume(r,h);
+            return false;
+        }
+    </script>
+    <div class="top" align="center">
+        <h1 align="center">Volume of Cylinder</h1>
+        <br><hr><br>
+        <form>
+        <div class="details">
+            <div class="radius">
+                <h2>Radius</h2>
+                <input id="rad" type="number" required>
+            </div>
+
+            <div class="height">
+                <h2>Height</h2>
+                <input id="hei" type="number" required>
+            </div>
+
+            <div class="vol"> 
+                <h2>Volume</h2>
+                <input id="voll" disabled>
+            </div>
+        </div>
+        <div>
+            <br>
+            <button onclick="return run();">Calculate</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
